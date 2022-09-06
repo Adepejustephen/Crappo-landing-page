@@ -5,8 +5,8 @@ export const WhyCrappoContainer = styled.section`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 10rem;
-  padding-top: 8rem;
+  gap: 5rem;
+  padding: 8rem 0;
 `;
 
 export const Numbers = styled.div`
@@ -64,4 +64,49 @@ export const Numbers = styled.div`
   }
 `;
 
-export const WhyCrappo = styled.div``
+export const WhyCrappoMain = styled.div`
+  .whyCrappo__left {
+   
+    .whyCrappo__left--image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .whyCrappo__right {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    
+
+    .whyCrappo__right--heading {
+      font-size: ${(props) => props.theme.fontSize.xl};
+      font-weight: ${(props) => props.theme.fontWeights.bold};
+      color: ${(props) => props.theme.colors.maintxt};
+      line-height: 3.2rem;
+    }
+
+    .whyCrappo__right--subText {
+      font-size: ${(props) => props.theme.fontSize.sm};
+      font-weight: ${(props) => props.theme.fontWeights.normal};
+      color: ${(props) => props.theme.colors.secondarytxt};
+
+      line-height: 2.2rem;
+    }
+
+    @media screen and (min-width: 900px) {
+      .whyCrappo__right--heading {
+        font-size: ${(props) => props.theme.fontSize.xxl};
+
+        max-width: 45rem;
+        line-height: 4.8rem;
+      }
+      .whyCrappo__right--subText {
+        font-size: ${(props) => props.theme.fontSize.md};
+        max-width: 45rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+`;

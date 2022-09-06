@@ -7,10 +7,17 @@ interface Direction {
 export const Container = styled.div<Direction>`
   display: flex;
   flex-direction: ${(props) => (props.reverse ? "column-reverse" : "column")};
+  align-items: center;
+  gap: 4rem;
+
   width: 100%;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 600px) {
     flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
+    gap: 5.64rem;
+  }
+  @media screen and (min-width: 900px) {
+    gap: 15.4rem;
   }
 `;
 

@@ -1,3 +1,5 @@
 export * from './hero'
 export * from './header'
 export * from './whyCrappo'
+export * from './checkEarning'
+export * from './tradeCrypto'

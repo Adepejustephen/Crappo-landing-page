@@ -4,5 +4,6 @@ import ArrowSm from './Arrow-Right-sm.svg'
 import BarIcon from './bar-chart-icon.svg'
 import EarthIcon from './earth-icon.svg'
 import PersonIcon from './person-Icon.svg'
+import WhyCrappoIll from './Illustrations.svg'
 
-export { Logo, HeroImg, ArrowSm, BarIcon,EarthIcon, PersonIcon };
+export { Logo, HeroImg, ArrowSm, BarIcon,EarthIcon, PersonIcon ,WhyCrappoIll };
