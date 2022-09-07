@@ -2,15 +2,22 @@ import styled, { createGlobalStyle } from "styled-components";
 
 interface Direction {
   reverse?: boolean;
+  mobileReverse?: boolean;
 }
 
 export const Container = styled.div<Direction>`
   display: flex;
-  flex-direction: ${(props) => (props.reverse ? "column-reverse" : "column")};
+  flex-direction: ${(props) =>
+    props.reverse
+      ? "column-reverse"
+      : props.mobileReverse
+      ? "column-reverse"
+      : "column"};
   align-items: center;
   gap: 4rem;
   padding: 0 3.2rem;
   width: 100%;
+  position: relative;
 
   @media screen and (min-width: 600px) {
     flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
