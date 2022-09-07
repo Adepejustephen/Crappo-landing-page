@@ -78,6 +78,11 @@ export const NavBar = styled.nav<NavOpen>`
     font-weight: ${(props) => props.theme.fontWeights.normal};
     color: ${(props) => props.theme.colors.maintxt};
     cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: ${(props) => props.theme.colors.secondarytxt};
+      transition: 0.3s;
+    }
   }
 
   @media screen and (min-width: 900px) {
@@ -91,6 +96,8 @@ export const NavBar = styled.nav<NavOpen>`
       flex-direction: row;
       align-items: center;
     }
+
+   
   }
 
   .btns {
