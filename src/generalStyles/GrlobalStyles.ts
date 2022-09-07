@@ -9,35 +9,36 @@ export const Container = styled.div<Direction>`
   flex-direction: ${(props) => (props.reverse ? "column-reverse" : "column")};
   align-items: center;
   gap: 4rem;
-
+  padding: 0 3.2rem;
   width: 100%;
 
   @media screen and (min-width: 600px) {
     flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
     gap: 5.64rem;
+    padding: 0 5.6rem;
   }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1300px) {
     gap: 15.4rem;
+    max-width: 120rem;
+    width: 100%;
+    margin: auto;
+    padding: 0;
   }
 `;
 
 export const AppContainer = styled.main`
   width: 100%;
-  max-width: 120rem;
-  padding: 0 3.2rem;
+  /* max-width: 120rem; */
 
 
 
   @media screen and (min-width: 600px) {
   
-  padding: 0 5.6rem;
+  
 
   }
   @media screen and (min-width: 1300px) {
-    max-width: 120rem;
-    width: 100%;
-    margin: auto;
-    padding: 0;
+   
   }
 `;
 

@@ -8,7 +8,7 @@ type ButtonProp = {
   heaaderBtn?: boolean;
 };
 
-export const Button = ({ children, whiteBg, noBg, heaaderBtn }: ButtonProp) => {
+export const Button:React.FC<ButtonProp> = ({ children, whiteBg, noBg, heaaderBtn }) => {
   return (
     <Btn whiteBg={whiteBg} noBg={noBg} heaaderBtn={heaaderBtn}>
       {children}

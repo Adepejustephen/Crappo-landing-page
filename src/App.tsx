@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { CheckEarnings, Header, Hero, TradeCrypto, WhyCrappo } from './components';
-import { AppContainer, GlobalStyle } from './generalStyles/GrlobalStyles';
+import {  GlobalStyle } from './generalStyles/GrlobalStyles';
 import { Theme } from './generalStyles/themes';
 
 function App() {
@@ -10,12 +10,12 @@ function App() {
       <>
         <GlobalStyle />
         <Header />
-        <AppContainer>
+        <main>
           <Hero />
           <WhyCrappo />
           <CheckEarnings />
-        </AppContainer>
-        <TradeCrypto />
+          <TradeCrypto />
+        </main>
       </>
     </ThemeProvider>
   );

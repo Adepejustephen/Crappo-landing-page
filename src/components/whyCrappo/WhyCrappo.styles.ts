@@ -16,6 +16,19 @@ export const Numbers = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  padding: 0 3.2rem;
+
+  @media screen and (min-width: 600px) {
+    
+    padding: 0 5.6rem;
+  }
+  @media screen and (min-width: 1300px) {
+   
+    max-width: 120rem;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
 
   .numbers__item {
     display: flex;

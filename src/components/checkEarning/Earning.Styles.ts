@@ -6,7 +6,19 @@ export const EearningContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  padding: 0 3.2rem;
+  @media screen and (min-width: 600px) {
+    
+    
+    padding: 0 5.6rem;
+  }
+  @media screen and (min-width: 1300px) {
+   
+    max-width: 120rem;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
 `;
 
 export const EarningContents = styled.div`
@@ -66,6 +78,7 @@ export const RateCalculatorContainer = styled.div`
   gap: 8rem;
   z-index: 3;
   margin-bottom: -38vh;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .04);
 
   .form {
     display: flex;
@@ -107,7 +120,6 @@ export const RateCalculatorContainer = styled.div`
     font-weight: ${(props) => props.theme.fontWeights.normal};
     font-size: ${(props) => props.theme.fontSize.sm};
     color: #828282;
-   
   }
 
   @media screen and (min-width: 600px) {
@@ -121,8 +133,6 @@ export const RateCalculatorContainer = styled.div`
       gap: 4.8rem;
     }
 
-   
-
     .form__input {
       max-width: 40rem;
       width: 100%;
@@ -132,21 +142,13 @@ export const RateCalculatorContainer = styled.div`
       max-width: 20rem;
       width: 100%;
     }
-
-   
   }
 
   @media screen and (min-width: 900px) {
-   
-
-    
-
     .form__input,
     .form__select {
       font-size: ${(props) => props.theme.fontSize.md};
     }
-
-   
 
     .revenue__head {
       font-size: ${(props) => props.theme.fontSize.md};
