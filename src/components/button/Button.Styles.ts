@@ -37,7 +37,7 @@ export const Btn = styled.button<BtnProp>`
   }
 
   @media screen and (min-width: 600px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding: ${(props) =>
       props.heaaderBtn ? " 1rem 2rem;" : "1.4rem 2.4rem 1.4rem 2.4rem"};
   }
