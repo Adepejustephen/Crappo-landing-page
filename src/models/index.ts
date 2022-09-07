@@ -13,3 +13,14 @@ export type DataProps = {
 
   btnTxt?: string;
 };
+
+
+
+export interface FooterProps {
+  firstLinks: Array<{
+    link: string;
+  }>;
+  secondLinks: Array<{
+    link: string;
+  }>;
+}
