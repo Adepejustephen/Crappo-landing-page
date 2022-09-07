@@ -1,15 +1,8 @@
 import { Bitcoin, Eth, Litecoin } from "../../assets";
+import { DataProps } from "../../models";
 
 
-type DataProps = {
-  currency: string;
-  abv: string;
-  text: string;
-  icon?:  React.ReactNode;
-  // icon?:  React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-  // icon?: React.Component<{}> | undefined;
-  btnTxt?: string;
-};
+
 
 export const tradeData: DataProps[] = [
   {

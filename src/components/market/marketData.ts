@@ -1,13 +1,8 @@
 import { Chart, Statistics, TableChart } from "../../assets";
+import { marketProps } from "../../models";
 
 
-type marketProps = {
-    title: string;
-    text: string;
-    image: string;
-    className?: string;
-    direction?: boolean;
-} 
+
 
 export const marketData: marketProps[] = [
   {
