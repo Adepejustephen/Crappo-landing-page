@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Logo } from "../../assets";
 import { Button } from "../button";
-import { HeaderContainer, NavBar } from "./Header.styles";
+import { HeaderContainer, NavBar, Togglebtn } from "./Header.styles";
+import { menu } from "./menu";
 
 export const Header = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -13,12 +14,17 @@ export const Header = () => {
         </div>
         <NavBar openNav={openNav}>
           <ul className="nav__list">
-            <li className="nav__list--item">Products</li>
-            <li className="nav__list--item">Features</li>
-            <li className="nav__list--item">About</li>
-            <li className="nav__list--item">Contact</li>
+            {menu.map((item, id) => (
+              <li
+                key={id}
+                className="nav__list--item"
+                onClick={() => setOpenNav(!openNav)}
+              >
+                {item.link}
+              </li>
+            ))}
           </ul>
-          <div className="btns">
+          <div className="btns" onClick={() => setOpenNav(!openNav)}>
             <Button noBg heaaderBtn>
               Login
             </Button>
@@ -28,6 +34,11 @@ export const Header = () => {
             <Button heaaderBtn>Register</Button>
           </div>
         </NavBar>
+        <Togglebtn openNav={openNav} onClick={() => setOpenNav(!openNav)}>
+          <div className="line line-one"></div>
+          <div className="line line-two "></div>
+          <div className="line line-three"></div>
+        </Togglebtn>
       </div>
     </HeaderContainer>
   );

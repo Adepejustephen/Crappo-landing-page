@@ -5,6 +5,7 @@ export type marketProps = {
   className?: string;
   direction?: boolean;
 }; 
+
 export type DataProps = {
   currency: string;
   abv: string;
@@ -12,6 +13,10 @@ export type DataProps = {
   icon?: React.ReactNode;
 
   btnTxt?: string;
+};
+
+export type MenuProps = {
+  link: string;
 };
 
 

@@ -38,7 +38,7 @@ export const FooterTop = styled.section`
   .footer__links {
     display: flex;
     justify-content: space-between;
-    gap: 6rem;
+    gap: 8rem;
   }
 
   .footer__links--container {
