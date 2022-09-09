@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from '../../generalStyles/GrlobalStyles'
+import { Container } from '../../generalStyles/GlobalStyles'
 import { HeroContainer } from './Hero.Styles'
 import {ArrowSm, HeroImg } from '../../assets'
 import { Button } from '../button'

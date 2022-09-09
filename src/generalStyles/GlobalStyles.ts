@@ -33,21 +33,7 @@ export const Container = styled.div<Direction>`
   }
 `;
 
-export const AppContainer = styled.main`
-  width: 100%;
-  /* max-width: 120rem; */
 
-
-
-  @media screen and (min-width: 600px) {
-  
-  
-
-  }
-  @media screen and (min-width: 1300px) {
-   
-  }
-`;
 
 export const GlobalStyle = createGlobalStyle`
 *, *::before, *::after {
@@ -63,6 +49,7 @@ html {
   min-height: 100vh;
   background-color: ${(props) => props.theme.colors.mainbg};
   position: relative;
+  overflow-x: hidden;
   }
 
   ul{

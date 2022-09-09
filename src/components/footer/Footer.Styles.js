@@ -12,7 +12,10 @@ export const FooterContainer = styled.footer`
     gap: 8rem;
   }
   @media screen and (min-width: 1300px) {
-    padding: 8rem 12rem;
+    padding: 8rem 0;
+    max-width: 120rem;
+    width: 100%;
+    margin: auto;
     gap: 10rem;
   }
 `;

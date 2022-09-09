@@ -1,20 +1,29 @@
-import React from "react";
-import { BarIcon, EarthIcon, PersonIcon, WhyCrappoIll } from "../../assets";
-import { Container } from "../../generalStyles/GrlobalStyles";
+import { motion } from "framer-motion";
+import {
+  BarIcon,
+  EarthIcon,
+  PersonIcon,
+  Pie,
+  UShape,
+  WhyCrappoIll,
+} from "../../assets";
+import { Container } from "../../generalStyles/GlobalStyles";
 import { Button } from "../button";
 import { Numbers, WhyCrappoContainer, WhyCrappoMain } from "./WhyCrappo.styles";
 
 export const WhyCrappo = () => {
   return (
     <WhyCrappoContainer>
+      <img src={UShape} alt="" className="U__shape" />
+      <img src={Pie} alt="" className="pie__shape" />
       <Numbers className="numbers">
-        <div className="numbers__item">
+        <motion.div className="numbers__item">
           <img src={BarIcon} alt="BarChart" className="numbers__item--image" />
           <div className="numbers__item--text">
             <h4>$30B</h4>
             <span>Digital Currency Exchanged</span>
           </div>
-        </div>
+        </motion.div>
         <div className="numbers__item">
           <img src={PersonIcon} alt="person" className="numbers__item--image" />
           <div className="numbers__item--text">
@@ -32,26 +41,24 @@ export const WhyCrappo = () => {
       </Numbers>
       <WhyCrappoMain>
         <Container>
-          <div className="whyCrappo__left">
+          <motion.div className="whyCrappo__left">
             <img
               src={WhyCrappoIll}
               alt="WhyCrappo illustration"
               className="whyCrappo__left--image"
             />
-          </div>
+          </motion.div>
 
-          <div className="whyCrappo__right">
-            <h4 className="whyCrappo__right--heading">
+          <motion.div className="whyCrappo__right">
+            <motion.h4 className="whyCrappo__right--heading">
               Why you should choose CRAPPO
-            </h4>
-            <span className="whyCrappo__right--subText">
+            </motion.h4>
+            <motion.span className="whyCrappo__right--subText">
               Experience the next generation cryptocurrency platform. No
               financial borders, extra fees, and fake reviews.
-            </span>
-            <Button>
-              Learn More
-            </Button>
-          </div>
+            </motion.span>
+            <Button>Learn More</Button>
+          </motion.div>
         </Container>
       </WhyCrappoMain>
     </WhyCrappoContainer>

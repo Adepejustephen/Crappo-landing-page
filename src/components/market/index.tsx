@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from '../../generalStyles/GrlobalStyles';
+import { Container } from '../../generalStyles/GlobalStyles';
 import { Button } from '../button';
 import { MarketContainer } from './Market.Styles'
 import { marketData } from './marketData';

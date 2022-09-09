@@ -1,15 +1,33 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const WhyCrappoContainer = styled.section`
+export const WhyCrappoContainer = styled(motion.section)`
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 5rem;
   padding: 8rem 0;
+  position: relative;
+
+  .U__shape {
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+    z-index: -1;
+  }
+
+  .pie__shape {
+    position: absolute;
+    right: -4rem;
+    top: 8rem;
+    z-index: -1;
+  }
 `;
 
-export const Numbers = styled.div`
+
+
+export const Numbers = styled(motion.div)`
   display: flex;
 
   flex-wrap: wrap;
@@ -77,7 +95,7 @@ export const Numbers = styled.div`
   }
 `;
 
-export const WhyCrappoMain = styled.div`
+export const WhyCrappoMain = styled(motion.div)`
   .whyCrappo__left {
    
     .whyCrappo__left--image {

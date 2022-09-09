@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../../generalStyles/GrlobalStyles";
+import { Container } from "../../generalStyles/GlobalStyles";
 import { Button } from "../button";
 import { SubscriptionContainer } from "./Subscribe.Styles";
 
