@@ -4,11 +4,30 @@ export const MarketContainer = styled.section`
   width: 100%;
   background-color: ${(props) => props.theme.colors.secondarybg};
   min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 8rem 0;
   gap: 10rem;
+  position: relative;
+  z-index: 2;
+
+  .market__topShape {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: none;
+    /* left: 0;
+    right: 0; */
+  }
+  .market__bottomShape {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
 
   .market__title {
     font-size: ${(props) => props.theme.fontSize.xl};
@@ -68,6 +87,21 @@ export const MarketContainer = styled.section`
     }
     .market__textContainer--text {
       font-size: ${(props) => props.theme.fontSize.md};
+    }
+
+   
+  }
+  @media screen and (min-width: 1200px) {
+
+    .market__topShape {
+     
+      display: block;
+     
+    }
+    .market__bottomShape {
+    
+      display: block;
+     
     }
   }
 `;

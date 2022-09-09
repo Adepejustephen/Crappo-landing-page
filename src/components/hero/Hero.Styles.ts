@@ -12,23 +12,26 @@ export const HeroContainer = styled.section`
 
   .hero__shape--one {
     position: absolute;
-    left: 15%;
+    left: 0;
     bottom: -20rem;
     z-index: -1;
     display: none;
-    /* width: 100%; */
-    /* height: 100%; */
+    width: 100%;
+    height: 100%;
     object-fit: contain;
   }
   .hero__shape--two {
     position: absolute;
-    right: -10%;
+    right: -35%;
     bottom: 0;
     z-index: -1;
     object-fit: contain;
     display: none;
+    width: 100%;
+    height: 100%;
+    
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1200px) {
     .hero__shape--one {
       display: block;
     }

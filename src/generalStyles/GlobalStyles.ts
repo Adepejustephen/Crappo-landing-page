@@ -44,7 +44,6 @@ export const GlobalStyle = createGlobalStyle`
 }
 html {
     font-size: 10px;
-  overflow-x: hidden;
 
 }
   body {
@@ -52,6 +51,8 @@ html {
   min-height: 100vh;
   background-color: ${(props) => props.theme.colors.mainbg};
   position: relative;
+  overflow-x: hidden;
+
   }
 
   ul{

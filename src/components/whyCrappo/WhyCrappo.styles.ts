@@ -15,12 +15,14 @@ export const WhyCrappoContainer = styled(motion.section)`
     right: 0;
     bottom: 2rem;
     z-index: -1;
+    display: none;
   }
   .left__shape {
     position: absolute;
     left: 0;
     bottom: 2rem;
     z-index: -1;
+    display: none;
   }
 
   .pie__shape {
@@ -28,6 +30,20 @@ export const WhyCrappoContainer = styled(motion.section)`
     right: -4rem;
     top: 8rem;
     z-index: -1;
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .U__shape {
+      display: flex;
+    }
+    .left__shape {
+      display: flex;
+    }
+
+    .pie__shape {
+      display: flex;
+    }
   }
 `;
 

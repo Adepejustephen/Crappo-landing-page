@@ -10,6 +10,7 @@ import Chart from "./Chart.svg";
 import TableChart from "./Table.svg";
 import Statistics from "./Statistic.svg";
 import BitCoinImg from "./Bitcoin.svg";
+import BitCoinBg from "./bitcoinbg.svg";
 import Mastercard from "./Mastercard.svg";
 import Visa from "./Visa.svg";
 import Twitter from "./twitter.svg";
@@ -20,6 +21,9 @@ import Linkedin from "./linkedin.svg";
 import Pie from "./D.svg";
 import UShape from "./u.svg";
 import HerohapeOne from "./hero-shapeone.svg";
+import Cubic from "./cubic.svg";
+import CircleTop from "./cicle-top.svg";
+import CircleBottom from "./circle-bottom.svg";
 import HeroShapeTwo from "./hero-shapetwo.svg";
 import WhyLeftShape from "./whyCrappo--left-bg.svg";
 import { ReactComponent as Bitcoin } from "./logos_bitcoin.svg";
@@ -53,5 +57,9 @@ export {
   UShape,
   HerohapeOne,
   HeroShapeTwo,
-  WhyLeftShape
+  WhyLeftShape,
+  Cubic,
+  CircleTop,
+  CircleBottom,
+  BitCoinBg,
 };

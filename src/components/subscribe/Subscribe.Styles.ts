@@ -4,6 +4,7 @@ export const SubscriptionContainer = styled.section`
   width: 100%;
   background: linear-gradient(180deg, #2b076e 0%, #0d0d2b 100%);
   padding: 8rem 0;
+  /* z-index: 5; */
 
   .SubscribeBox {
     padding: 4.8rem;
@@ -13,6 +14,20 @@ export const SubscriptionContainer = styled.section`
     flex-direction: column;
     gap: 3rem;
     width: 100%;
+    position: relative;
+  }
+
+  .subscribe__cubic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+  }
+  .subscribe__bitcoin {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* z-index: -1; */
   }
 
   .subscribeBox__left {

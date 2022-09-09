@@ -1,4 +1,5 @@
 import React from 'react'
+import { CircleBottom, CircleTop } from "../../assets";
 import { Container } from '../../generalStyles/GlobalStyles';
 import { Button } from '../button';
 import { MarketContainer } from './Market.Styles'
@@ -7,6 +8,8 @@ import { marketData } from './marketData';
 export const Market = () => {
   return (
     <MarketContainer>
+      <img src={CircleTop} alt="cubic" className="market__topShape" />
+      <img src={ CircleBottom} alt="cubic" className="market__bottomShape" />
       <h2 className="market__title">
         Market sentiments, portfolio, and run the infrastructure of your choice
       </h2>
@@ -29,7 +32,6 @@ export const Market = () => {
           </Container>
         );
       })}
-      
     </MarketContainer>
   );
 }

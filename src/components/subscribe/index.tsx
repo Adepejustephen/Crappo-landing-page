@@ -1,4 +1,5 @@
 import React from "react";
+import {  BitCoinBg,  Cubic } from "../../assets";
 import { Container } from "../../generalStyles/GlobalStyles";
 import { Button } from "../button";
 import { SubscriptionContainer } from "./Subscribe.Styles";
@@ -8,6 +9,8 @@ export const Subscription = () => {
     <SubscriptionContainer>
       <Container>
         <div className="SubscribeBox">
+          <img src={Cubic} alt="cubic-shape" className="subscribe__cubic" />
+          <img src={BitCoinBg} alt="" className="subscribe__bitcoin" />
           <div className="subscribeBox__left">
             <h4 className="subscribeBox__left--title">Start mining now</h4>
             <span className="subscribeBox__left--text">
