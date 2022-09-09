@@ -30,7 +30,9 @@ export const CheckEarnings = () => {
 
           <div className="revenue">
             <h4 className="revenue__head">ESTIMATED 24 HOUR REVENUE:</h4>
-            <h2 className="revenue__amount">0.055 130 59 ETH ($1275)</h2>
+            <h2 className="revenue__amount">
+              0.055 130 59 ETH <span>($1275)</span>
+            </h2>
             <span className="revenue__smallText">
               Revenue will change based on mining difficulty and Ethereum price.
             </span>

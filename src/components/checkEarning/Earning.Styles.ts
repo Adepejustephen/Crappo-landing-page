@@ -78,7 +78,7 @@ export const RateCalculatorContainer = styled.div`
   gap: 8rem;
   z-index: 3;
   margin-bottom: -38vh;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, .04);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.04);
 
   .form {
     display: flex;
@@ -114,6 +114,10 @@ export const RateCalculatorContainer = styled.div`
     font-size: ${(props) => props.theme.fontSize.xl};
     color: ${(props) => props.theme.colors.mainbg};
     line-height: 150%;
+
+    span {
+      color: ${(props) => props.theme.colors.btnbg};
+    }
   }
 
   .revenue__smallText {
