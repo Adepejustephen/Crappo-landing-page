@@ -19,6 +19,9 @@ import Instagram from "./instagram.svg";
 import Linkedin from "./linkedin.svg";
 import Pie from "./D.svg";
 import UShape from "./u.svg";
+import HerohapeOne from "./hero-shapeone.svg";
+import HeroShapeTwo from "./hero-shapetwo.svg";
+import WhyLeftShape from "./whyCrappo--left-bg.svg";
 import { ReactComponent as Bitcoin } from "./logos_bitcoin.svg";
 import { ReactComponent as Eth } from "./Eth.svg";
 import { ReactComponent as Litecoin } from "./Litecoin.svg";
@@ -48,4 +51,7 @@ export {
   Instagram,
   Pie,
   UShape,
+  HerohapeOne,
+  HeroShapeTwo,
+  WhyLeftShape
 };

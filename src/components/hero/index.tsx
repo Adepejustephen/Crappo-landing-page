@@ -1,12 +1,15 @@
 import React from 'react'
 import { Container } from '../../generalStyles/GlobalStyles'
 import { HeroContainer } from './Hero.Styles'
-import {ArrowSm, HeroImg } from '../../assets'
+import {ArrowSm, HerohapeOne, HeroImg, HeroShapeTwo } from '../../assets'
 import { Button } from '../button'
 
 export const Hero = () => {
   return (
     <HeroContainer>
+
+      <img src={HerohapeOne} alt="shape" className="hero__shape--one" />
+      <img src={HeroShapeTwo} alt="shape" className="hero__shape--two" />
       <Container>
         <div className="hero__left">
           <div className="hero__left--topText">

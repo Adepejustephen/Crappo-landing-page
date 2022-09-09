@@ -6,6 +6,7 @@ import {
   Pie,
   UShape,
   WhyCrappoIll,
+  WhyLeftShape,
 } from "../../assets";
 import { Container } from "../../generalStyles/GlobalStyles";
 import { Button } from "../button";
@@ -14,8 +15,9 @@ import { Numbers, WhyCrappoContainer, WhyCrappoMain } from "./WhyCrappo.styles";
 export const WhyCrappo = () => {
   return (
     <WhyCrappoContainer>
-      <img src={UShape} alt="" className="U__shape" />
-      <img src={Pie} alt="" className="pie__shape" />
+      <img src={UShape} alt="ushape" className="U__shape" />
+      <img src={Pie} alt="pieshape" className="pie__shape" />
+      <img src={WhyLeftShape} alt="left-shape" className="left__shape" />
       <Numbers className="numbers">
         <motion.div className="numbers__item">
           <img src={BarIcon} alt="BarChart" className="numbers__item--image" />

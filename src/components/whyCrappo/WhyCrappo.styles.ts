@@ -16,6 +16,12 @@ export const WhyCrappoContainer = styled(motion.section)`
     bottom: 2rem;
     z-index: -1;
   }
+  .left__shape {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    z-index: -1;
+  }
 
   .pie__shape {
     position: absolute;

@@ -40,16 +40,18 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 html {
     font-size: 10px;
+  overflow-x: hidden;
+
 }
   body {
   font-family: 'Rubik';
   min-height: 100vh;
   background-color: ${(props) => props.theme.colors.mainbg};
   position: relative;
-  overflow-x: hidden;
   }
 
   ul{

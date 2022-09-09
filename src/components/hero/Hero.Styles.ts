@@ -5,8 +5,36 @@ export const HeroContainer = styled.section`
   display: flex;
   align-items: center;
   padding-top: 4rem;
+  position: relative;
   @media screen and (min-width: 600px) {
     padding-top: 0rem;
+  }
+
+  .hero__shape--one {
+    position: absolute;
+    left: 15%;
+    bottom: -20rem;
+    z-index: -1;
+    display: none;
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: contain;
+  }
+  .hero__shape--two {
+    position: absolute;
+    right: -10%;
+    bottom: 0;
+    z-index: -1;
+    object-fit: contain;
+    display: none;
+  }
+  @media screen and (min-width: 600px) {
+    .hero__shape--one {
+      display: block;
+    }
+    .hero__shape--two {
+      display: block;
+    }
   }
 
   .hero__left {
