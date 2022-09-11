@@ -22,7 +22,7 @@ export const TradeCrypto = () => {
         <Currencies
           variants={staggerContainer}
           initial="initial"
-          viewport={{ once: false, amount: 0.4 }}
+          viewport={{ once: false, amount: 0.2 }}
           whileInView="animate"
         >
           {tradeData.map((item, id) => {
