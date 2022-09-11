@@ -19,7 +19,7 @@ export const fadeInDown = {
   animate: {
     y: 0,
     opacity: 1,
-    transition: { type: "tween", duration: .5 },
+    transition: { type: "tween", duration: 0.5 },
   },
 };
 
@@ -32,7 +32,6 @@ export const staggerContainer = {
     },
   },
 };
-
 
 export const fadeInLeft = {
   initial: {
@@ -121,15 +120,30 @@ export const fadeInUp = {
   },
 };
 
-
-
 export const zoomOut = {
-  initial: { scale: .8, opacity: 0 },
+  initial: { scale: 0.8, opacity: 0 },
   animate: {
-   scale: 1,
+    scale: 1,
     opacity: 1,
     transition: { type: "spring", duration: 1.1 },
   },
 };
 
+export const headerButton = {
+  initial: { y: -10, rotate: 20, opacity: 0 },
+  animate: {
+    y: 0,
+    rotate: 0,
+    opacity: 1,
+    transition: { type: "spring", duration: 0.5 },
+  },
+};
 
+export const rotateLine = {
+  initial: { rotate: 360, opacity: 0 },
+  animate: {
+    rotate: 0,
+    opacity: 1,
+    transition: { type: "spring", duration: 1 },
+  },
+};
