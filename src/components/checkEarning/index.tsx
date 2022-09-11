@@ -1,12 +1,18 @@
 
+import { fadeInUp, staggerContainer, zoomOut } from '../../variants';
 import { Button } from '../button';
 import { EarningContents, EarningTextContainer, EearningContainer, RateCalculatorContainer } from './Earning.Styles'
 
 export const CheckEarnings = () => {
   return (
     <EearningContainer>
-      <EarningContents>
-        <EarningTextContainer>
+      <EarningContents
+        variants={staggerContainer}
+        initial="initial"
+        viewport={{ once: false, amount: 1 }}
+        whileInView="animate"
+      >
+        <EarningTextContainer variants={fadeInUp}>
           <h4>Check how much you can earn</h4>
           <p>
             Let’s check your hash rate to see how much you will earn today,
@@ -14,7 +20,7 @@ export const CheckEarnings = () => {
           </p>
         </EarningTextContainer>
 
-        <RateCalculatorContainer>
+        <RateCalculatorContainer variants={zoomOut}>
           <form action="" className="form">
             <input
               type="text"

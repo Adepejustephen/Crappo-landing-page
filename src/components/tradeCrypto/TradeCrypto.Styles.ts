@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const TradeCryptoContainer = styled.section`
@@ -47,7 +48,7 @@ export const TradeCryptoContainer = styled.section`
   }
 `;
 
-export const Currencies = styled.div`
+export const Currencies = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 type NavOpen = {
@@ -5,7 +6,7 @@ type NavOpen = {
 }
 
 
-export const HeaderContainer = styled.header`
+export const HeaderContainer = styled(motion.header)`
   width: 100%;
   display: flex;
   /* align-items: center; */
@@ -51,7 +52,7 @@ export const HeaderContainer = styled.header`
 
 `;
 
-export const Togglebtn = styled.div<NavOpen>`
+export const Togglebtn = styled(motion.div)<NavOpen>`
   display: flex;
   flex-direction: column;
   gap: .7rem;
@@ -84,7 +85,7 @@ export const Togglebtn = styled.div<NavOpen>`
   }
 `;
 
-export const NavBar = styled.nav<NavOpen>`
+export const NavBar = styled(motion.nav)<NavOpen>`
   display: ${(props) => (props.openNav ? "flex" : "none")};
   flex-direction: column;
   align-items: center;
@@ -147,6 +148,8 @@ export const NavBar = styled.nav<NavOpen>`
       flex-direction: row;
       align-items: center;
     }
+     .nav__list--item {
+    font-size: 1.4rem;}
     .btns {
       flex-direction: row;
     }

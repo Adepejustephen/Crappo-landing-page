@@ -16,10 +16,7 @@ export const MarketContainer = styled.section`
   .market__topShape {
     position: absolute;
     top: 0;
-    z-index: -1;
     display: none;
-    /* left: 0;
-    right: 0; */
   }
   .market__bottomShape {
     position: absolute;

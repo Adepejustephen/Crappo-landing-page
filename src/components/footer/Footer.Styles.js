@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
@@ -20,7 +21,7 @@ export const FooterContainer = styled.footer`
   }
 `;
 
-export const FooterTop = styled.section`
+export const FooterTop = styled(motion.section)`
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -118,7 +119,7 @@ export const FooterTop = styled.section`
   }
 `;
 
-export const FooterBottom = styled.section`
+export const FooterBottom = styled(motion.section)`
   display: flex;
   flex-direction: column-reverse;
   gap: 4rem;
@@ -140,9 +141,9 @@ export const FooterBottom = styled.section`
     gap: 4rem;
 
     .footer__bottom--icon {
-width: 2rem;
-height: 2rem;
-cursor: pointer
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
     }
   }
 `;

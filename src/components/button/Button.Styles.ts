@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 type BtnProp = {
@@ -6,7 +7,7 @@ type BtnProp = {
     heaaderBtn?: boolean;
 }
 
-export const Btn = styled.button<BtnProp>`
+export const Btn = styled(motion.button)<BtnProp>`
   background-color: ${(props) =>
     props.whiteBg
       ? props.theme.colors.maintxt

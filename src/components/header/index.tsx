@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Logo } from "../../assets";
+import { fadeInDown } from "../../variants";
 import { Button } from "../button";
 import { HeaderContainer, NavBar, Togglebtn } from "./Header.styles";
 import { menu } from "./menu";
@@ -7,12 +8,12 @@ import { menu } from "./menu";
 export const Header = () => {
   const [openNav, setOpenNav] = useState(false);
   return (
-    <HeaderContainer>
+    <HeaderContainer variants={fadeInDown} animate='animate'initial='initial' >
       <div className="header__content">
         <div className="logo">
           <img src={Logo} alt="logo" className="logo__image" />
         </div>
-        <NavBar openNav={openNav}>
+        <NavBar openNav={openNav} >
           <ul className="nav__list">
             {menu.map((item, id) => (
               <li

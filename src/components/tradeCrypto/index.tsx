@@ -1,5 +1,6 @@
-import React from 'react'
+import {motion} from 'framer-motion'
 import { ArrowSm, BorderArrowRight } from '../../assets';
+import { fadeIn,  fadeInLeft, staggerContainer } from '../../variants';
 import { Button } from '../button';
 import { Currencies, TradeCryptoContainer } from './TradeCrypto.Styles'
 import { tradeData } from './tradeData';
@@ -8,14 +9,29 @@ import { tradeData } from './tradeData';
 export const TradeCrypto = () => {
   return (
     <TradeCryptoContainer>
-      <div className="content">
-        <h4 className="title">
+      <motion.div
+        className="content"
+        variants={staggerContainer}
+        initial="initial"
+        viewport={{ once: false, amount: 0.2 }}
+        whileInView="animate"
+      >
+        <motion.h4 className="title" variants={fadeIn}>
           Trade securely and market the high growth cryptocurrencies.
-        </h4>
-        <Currencies>
+        </motion.h4>
+        <Currencies
+          variants={staggerContainer}
+          initial="initial"
+          viewport={{ once: false, amount: 0.4 }}
+          whileInView="animate"
+        >
           {tradeData.map((item, id) => {
             return (
-              <div className="currency__box" key={id}>
+              <motion.div
+                className="currency__box"
+                key={id}
+                variants={fadeInLeft}
+              >
                 {item.icon}
                 <h4 className="currency__box--name">
                   {item.currency} <span>{item.abv}</span>
@@ -28,15 +44,18 @@ export const TradeCrypto = () => {
                 )}
                 {!item.btnTxt && (
                   <Button noBg>
-                    <img src={BorderArrowRight} alt="arrow-right" className='nobg__btn--icon' />
+                    <img
+                      src={BorderArrowRight}
+                      alt="arrow-right"
+                      className="nobg__btn--icon"
+                    />
                   </Button>
                 )}
-              </div>
+              </motion.div>
             );
           })}
-          
         </Currencies>
-      </div>
+      </motion.div>
     </TradeCryptoContainer>
   );
 }

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled, { createGlobalStyle } from "styled-components";
 
 interface Direction {
@@ -5,7 +6,7 @@ interface Direction {
   mobileReverse?: boolean;
 }
 
-export const Container = styled.div<Direction>`
+export const Container = styled(motion.div)<Direction>`
   display: flex;
   flex-direction: ${(props) =>
     props.reverse
@@ -44,6 +45,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 html {
     font-size: 10px;
+  overflow-x: hidden;
+
 
 }
   body {
@@ -51,7 +54,6 @@ html {
   min-height: 100vh;
   background-color: ${(props) => props.theme.colors.mainbg};
   position: relative;
-  overflow-x: hidden;
 
   }
 

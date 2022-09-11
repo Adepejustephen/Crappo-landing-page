@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
 import React from "react";
-import {  BitCoinBg,  Cubic } from "../../assets";
+import { BitCoinBg, Cubic } from "../../assets";
 import { Container } from "../../generalStyles/GlobalStyles";
+import { subscribeFadeInRight } from "../../variants";
 import { Button } from "../button";
 import { SubscriptionContainer } from "./Subscribe.Styles";
 
@@ -8,7 +10,13 @@ export const Subscription = () => {
   return (
     <SubscriptionContainer>
       <Container>
-        <div className="SubscribeBox">
+        <motion.div
+          className="SubscribeBox"
+          variants={subscribeFadeInRight}
+          initial="initial"
+          viewport={{ once: false, amount: 0.6 }}
+          whileInView="animate"
+        >
           <img src={Cubic} alt="cubic-shape" className="subscribe__cubic" />
           <img src={BitCoinBg} alt="" className="subscribe__bitcoin" />
           <div className="subscribeBox__left">
@@ -25,7 +33,7 @@ export const Subscription = () => {
             />
             <Button whiteBg>Subscribe</Button>
           </form>
-        </div>
+        </motion.div>
       </Container>
     </SubscriptionContainer>
   );

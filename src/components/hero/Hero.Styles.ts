@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const HeroContainer = styled.section`
+export const HeroContainer = styled(motion.section)`
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -12,23 +13,21 @@ export const HeroContainer = styled.section`
 
   .hero__shape--one {
     position: absolute;
-    left: 0;
+    right: 15%;
     bottom: -20rem;
     z-index: -1;
     display: none;
-    width: 100%;
-    height: 100%;
+    
     object-fit: contain;
   }
   .hero__shape--two {
     position: absolute;
-    right: -35%;
+    right: -10%;
     bottom: 0;
     z-index: -1;
     object-fit: contain;
     display: none;
-    width: 100%;
-    height: 100%;
+    
     
   }
   @media screen and (min-width: 1200px) {

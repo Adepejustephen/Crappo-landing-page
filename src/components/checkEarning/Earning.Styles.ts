@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const EearningContainer = styled.section`
@@ -21,7 +22,7 @@ export const EearningContainer = styled.section`
   }
 `;
 
-export const EarningContents = styled.div`
+export const EarningContents = styled(motion.div)`
   max-width: 942px;
   display: flex;
   flex-direction: column;
@@ -29,7 +30,7 @@ export const EarningContents = styled.div`
   gap: 6rem;
 `;
 
-export const EarningTextContainer = styled.div`
+export const EarningTextContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +69,7 @@ export const EarningTextContainer = styled.div`
   }
 `;
 
-export const RateCalculatorContainer = styled.div`
+export const RateCalculatorContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   width: 100%;

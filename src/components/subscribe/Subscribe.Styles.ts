@@ -21,13 +21,14 @@ export const SubscriptionContainer = styled.section`
     position: absolute;
     top: 0;
     left: 0;
-    /* z-index: -1; */
+    display: none;
   }
   .subscribe__bitcoin {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    /* z-index: -1; */
+    bottom: -1rem;
+    right: 1.5rem;
+    object-fit: contain;
+    display: none;
   }
 
   .subscribeBox__left {
@@ -93,6 +94,13 @@ export const SubscriptionContainer = styled.section`
       font-size: ${(props) => props.theme.fontSize.md};
       line-height: 2.8rem;
       width: 34rem;
+    }
+
+    .subscribe__cubic {
+      display: flex;
+    }
+    .subscribe__bitcoin {
+      display: flex;
     }
   }
 `;
