@@ -76,7 +76,7 @@ export const subscribeFadeInRight = {
   initial: {
     x: 50,
     opacity: 0,
-    rotate: 20,
+    rotate: 10,
   },
   animate: {
     x: 0,

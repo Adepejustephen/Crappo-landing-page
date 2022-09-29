@@ -11,7 +11,6 @@ export type DataProps = {
   abv: string;
   text: string;
   icon?: React.ReactNode;
-
   btnTxt?: string;
 };
 
