@@ -15,8 +15,9 @@ Crappo  landing page is a submission for frontend design implementation challeng
 ![HOME](https://res.cloudinary.com/dvgudwocb/image/upload/v1664419793/crappo-landing-page/React-App_2_xoy1np.png)
 
 
-## Video Demo
-[![Watch the video (https://res.cloudinary.com/dvgudwocb/video/upload/v1664420757/crappo-landing-page/React_App_1_iohmxu.mp4)]]
+## Demo
+
+https://user-images.githubusercontent.com/69911688/192930272-7f305a74-633a-4d10-955a-c3cfab0b39e6.mp4
 
 
 ### Resources Used in This Project
