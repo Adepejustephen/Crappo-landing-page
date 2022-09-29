@@ -16,7 +16,7 @@ Crappo  landing page is a submission  frontend design implementation challenge o
 
 
 ## Video Demo
-(https://www.awesomescreenshot.com/video/11386723?key=0cf578efec1d6a2b362f860ecfafa82d)
+[![Watch the video](https://www.awesomescreenshot.com/video/11386723?key=0cf578efec1d6a2b362f860ecfafa82d)
 
 
 ### Resources Used in This Project
